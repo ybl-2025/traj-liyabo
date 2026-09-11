@@ -1,6 +1,6 @@
 # ETH/UCY 行人轨迹分析说明
 
-本目录按照课程图片中的 A1–A5 要求处理 5 个序列：`seq_eth`、`seq_hotel`、`zara01`、`zara02`、`students03`。
+A1–A5 要求处理 5 个序列：`seq_eth`、`seq_hotel`、`zara01`、`zara02`、`students03`
 
 ## 结果目录
 
@@ -40,14 +40,5 @@
 - 震荡：按运动方向变化符号次数筛选代表轨迹。
 - 瓶颈：空间网格内的平均速度分布，持续低速区域可作为瓶颈线索。
 
-课程报告中建议使用“候选”或“现象线索”等表述，并结合轨迹或原视频人工复核后再下结论。
-
-## 复现
-
-```powershell
-python analyze_eth_ucy.py `
-  --data-root "E:\traffic_data_lyb\context-group-detection-main\datasets" `
-  --output "E:\traffic_data_lyb\analysis_results"
-```
 
 依赖：Python 3.10+、NumPy、pandas、Matplotlib。
