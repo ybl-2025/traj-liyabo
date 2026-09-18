@@ -1,0 +1,7 @@
+{
+  "artifact_checks": "passed",
+  "initial_positions_match": "passed",
+  "upstream_default_potential_equivalence": "passed",
+  "upstream_zero_speed_nan": "reproduced",
+  "scope": "Numerical checks do not imply behavioral agreement or no overlaps."
+}

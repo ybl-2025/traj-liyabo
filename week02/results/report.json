@@ -1,0 +1,628 @@
+{
+  "data": {
+    "rows": 27200,
+    "pedestrians": 64,
+    "frames": 425,
+    "fps_assumed": 25,
+    "position_scale_assumed": 0.01,
+    "initial_frame": 47,
+    "calibration_end_frame": 248,
+    "sha256": "05d52540e3a4f427f52627cc4aaf9c7d1dde7228ca5513995284d0f52f14d790"
+  },
+  "parameters": {
+    "A": 2.1,
+    "B": 0.5,
+    "asym": 0.0,
+    "tau": 0.5,
+    "speed": 2.6,
+    "kind": "elliptical"
+  },
+  "grid": [
+    {
+      "parameters": {
+        "A": 1.0,
+        "B": 0.3,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 1.3,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 3.233149559648153,
+        "FDE_m": 5.682272787115183,
+        "speed_MAE_mps": 0.836325661866482,
+        "min_pair_distance_m": 0.02600627765059471,
+        "close_pair_frames_lt_0.4m": 1349,
+        "mean_speed_mps": 1.1046444177627563,
+        "mean_min_radius_m": 0.7246131896972656,
+        "arrival_fraction": 0.03125,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 1.0,
+        "B": 0.3,
+        "asym": 1.0,
+        "tau": 0.5,
+        "speed": 1.3,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 3.2780637635453966,
+        "FDE_m": 5.701901060776053,
+        "speed_MAE_mps": 0.8207609752880682,
+        "min_pair_distance_m": 0.021152859553694725,
+        "close_pair_frames_lt_0.4m": 997,
+        "mean_speed_mps": 1.1302342414855957,
+        "mean_min_radius_m": 1.0450879335403442,
+        "arrival_fraction": 0.171875,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 1.0,
+        "B": 0.5,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 1.3,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 3.3741104864554505,
+        "FDE_m": 6.066821923520549,
+        "speed_MAE_mps": 0.8787733606072553,
+        "min_pair_distance_m": 0.01644105464220047,
+        "close_pair_frames_lt_0.4m": 369,
+        "mean_speed_mps": 1.0444533824920654,
+        "mean_min_radius_m": 1.08348548412323,
+        "arrival_fraction": 0.046875,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 1.0,
+        "B": 0.5,
+        "asym": 1.0,
+        "tau": 0.5,
+        "speed": 1.3,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 3.4560010017479263,
+        "FDE_m": 6.038070663899678,
+        "speed_MAE_mps": 0.8493721864300782,
+        "min_pair_distance_m": 0.06298939883708954,
+        "close_pair_frames_lt_0.4m": 302,
+        "mean_speed_mps": 1.0911623239517212,
+        "mean_min_radius_m": 1.4721699953079224,
+        "arrival_fraction": 0.09375,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.3,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 1.3,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 3.3114740802471863,
+        "FDE_m": 6.044180204707434,
+        "speed_MAE_mps": 0.8701794060628427,
+        "min_pair_distance_m": 0.22235585749149323,
+        "close_pair_frames_lt_0.4m": 483,
+        "mean_speed_mps": 1.062218189239502,
+        "mean_min_radius_m": 1.0676002502441406,
+        "arrival_fraction": 0.03125,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.3,
+        "asym": 1.0,
+        "tau": 0.5,
+        "speed": 1.3,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 3.3871980771312447,
+        "FDE_m": 6.01528862587355,
+        "speed_MAE_mps": 0.830657177116608,
+        "min_pair_distance_m": 0.11523639410734177,
+        "close_pair_frames_lt_0.4m": 294,
+        "mean_speed_mps": 1.1220982074737549,
+        "mean_min_radius_m": 1.509684443473816,
+        "arrival_fraction": 0.09375,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.5,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 1.3,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 3.533249152924461,
+        "FDE_m": 6.59290151201642,
+        "speed_MAE_mps": 0.9339281741362917,
+        "min_pair_distance_m": 0.25883522629737854,
+        "close_pair_frames_lt_0.4m": 9,
+        "mean_speed_mps": 0.9786009788513184,
+        "mean_min_radius_m": 1.7082922458648682,
+        "arrival_fraction": 0.03125,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.5,
+        "asym": 1.0,
+        "tau": 0.5,
+        "speed": 1.3,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 3.6817029796920613,
+        "FDE_m": 6.535723274877892,
+        "speed_MAE_mps": 0.8720470209229817,
+        "min_pair_distance_m": 0.22440525889396667,
+        "close_pair_frames_lt_0.4m": 77,
+        "mean_speed_mps": 1.0661677122116089,
+        "mean_min_radius_m": 2.193565845489502,
+        "arrival_fraction": 0.03125,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.5,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 2.2,
+        "kind": "diamond"
+      },
+      "calibration": {
+        "ADE_m": 2.8499887463272766,
+        "FDE_m": 6.032950275779553,
+        "speed_MAE_mps": 0.837929292732393,
+        "min_pair_distance_m": 0.012114997021853924,
+        "close_pair_frames_lt_0.4m": 2611,
+        "mean_speed_mps": 1.3353605270385742,
+        "mean_min_radius_m": 0.9543970227241516,
+        "arrival_fraction": 0.34375,
+        "max_speed_mps": 2.7343239784240723,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.5,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 2.6,
+        "kind": "diamond"
+      },
+      "calibration": {
+        "ADE_m": 2.871897626461568,
+        "FDE_m": 5.539315426357261,
+        "speed_MAE_mps": 0.8511987665918211,
+        "min_pair_distance_m": 0.0014521541306748986,
+        "close_pair_frames_lt_0.4m": 3054,
+        "mean_speed_mps": 1.54513680934906,
+        "mean_min_radius_m": 0.8252251148223877,
+        "arrival_fraction": 0.96875,
+        "max_speed_mps": 3.0934689044952393,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.5,
+        "asym": 0.2,
+        "tau": 0.5,
+        "speed": 2.2,
+        "kind": "diamond"
+      },
+      "calibration": {
+        "ADE_m": 2.914257260581072,
+        "FDE_m": 4.891605804500611,
+        "speed_MAE_mps": 0.695952264195714,
+        "min_pair_distance_m": 0.010216004215180874,
+        "close_pair_frames_lt_0.4m": 1390,
+        "mean_speed_mps": 1.6493490934371948,
+        "mean_min_radius_m": 1.3986046314239502,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 2.8600001335144043,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.5,
+        "asym": 0.2,
+        "tau": 0.5,
+        "speed": 2.6,
+        "kind": "diamond"
+      },
+      "calibration": {
+        "ADE_m": 3.0165530740889936,
+        "FDE_m": 4.69283079905831,
+        "speed_MAE_mps": 0.7438607163210593,
+        "min_pair_distance_m": 0.008069927804172039,
+        "close_pair_frames_lt_0.4m": 1627,
+        "mean_speed_mps": 1.895471215248108,
+        "mean_min_radius_m": 1.3512895107269287,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 3.3799996376037598,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.8,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 2.2,
+        "kind": "diamond"
+      },
+      "calibration": {
+        "ADE_m": 2.961016772562034,
+        "FDE_m": 6.465851539441438,
+        "speed_MAE_mps": 0.8704322538573529,
+        "min_pair_distance_m": 0.013926106505095959,
+        "close_pair_frames_lt_0.4m": 2099,
+        "mean_speed_mps": 1.2144479751586914,
+        "mean_min_radius_m": 1.2794275283813477,
+        "arrival_fraction": 0.234375,
+        "max_speed_mps": 2.796560525894165,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.8,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 2.6,
+        "kind": "diamond"
+      },
+      "calibration": {
+        "ADE_m": 2.9203442194790745,
+        "FDE_m": 5.882762986618773,
+        "speed_MAE_mps": 0.8498841944378646,
+        "min_pair_distance_m": 0.012967534363269806,
+        "close_pair_frames_lt_0.4m": 2499,
+        "mean_speed_mps": 1.376592755317688,
+        "mean_min_radius_m": 1.1388682126998901,
+        "arrival_fraction": 0.96875,
+        "max_speed_mps": 3.29830265045166,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.8,
+        "asym": 0.2,
+        "tau": 0.5,
+        "speed": 2.2,
+        "kind": "diamond"
+      },
+      "calibration": {
+        "ADE_m": 3.0324770473375358,
+        "FDE_m": 5.743433425088277,
+        "speed_MAE_mps": 0.7223175499083266,
+        "min_pair_distance_m": 0.033068325370550156,
+        "close_pair_frames_lt_0.4m": 1137,
+        "mean_speed_mps": 1.4789851903915405,
+        "mean_min_radius_m": 1.7107012271881104,
+        "arrival_fraction": 0.984375,
+        "max_speed_mps": 2.7302231788635254,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.8,
+        "asym": 0.2,
+        "tau": 0.5,
+        "speed": 2.6,
+        "kind": "diamond"
+      },
+      "calibration": {
+        "ADE_m": 2.937521377678107,
+        "FDE_m": 4.948603980392365,
+        "speed_MAE_mps": 0.7484382371597441,
+        "min_pair_distance_m": 0.010115784592926502,
+        "close_pair_frames_lt_0.4m": 1566,
+        "mean_speed_mps": 1.7018229961395264,
+        "mean_min_radius_m": 1.5091006755828857,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 3.269458293914795,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.5,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 2.2,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 2.6998339365603625,
+        "FDE_m": 5.810454684371649,
+        "speed_MAE_mps": 0.8440661074979792,
+        "min_pair_distance_m": 0.027257153764367104,
+        "close_pair_frames_lt_0.4m": 876,
+        "mean_speed_mps": 1.2147290706634521,
+        "mean_min_radius_m": 1.0444893836975098,
+        "arrival_fraction": 0.71875,
+        "max_speed_mps": 2.7486164569854736,
+        "finite": true
+      }
+    },
+    {
+      "parameters": {
+        "A": 2.1,
+        "B": 0.5,
+        "asym": 0.0,
+        "tau": 0.5,
+        "speed": 2.6,
+        "kind": "elliptical"
+      },
+      "calibration": {
+        "ADE_m": 2.648060715529983,
+        "FDE_m": 5.037683100101972,
+        "speed_MAE_mps": 0.8088555484274568,
+        "min_pair_distance_m": 0.005756358150392771,
+        "close_pair_frames_lt_0.4m": 1815,
+        "mean_speed_mps": 1.4310429096221924,
+        "mean_min_radius_m": 0.9947487711906433,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 3.132678747177124,
+        "finite": true
+      }
+    }
+  ],
+  "metrics": {
+    "observed": {
+      "all": {
+        "ADE_m": 0.0,
+        "FDE_m": 0.0,
+        "speed_MAE_mps": 0.0,
+        "min_pair_distance_m": 0.1560270009453492,
+        "close_pair_frames_lt_0.4m": 253,
+        "mean_speed_mps": 1.3302424102226365,
+        "mean_min_radius_m": 2.202285929296627,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 4.5210668788243105,
+        "finite": true
+      },
+      "holdout": {
+        "ADE_m": 0.0,
+        "FDE_m": 0.0,
+        "speed_MAE_mps": 0.0,
+        "min_pair_distance_m": 0.1560270009453492,
+        "close_pair_frames_lt_0.4m": 73,
+        "mean_speed_mps": 0.8180805679581014,
+        "mean_min_radius_m": 2.202285929296627,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 4.5210668788243105,
+        "finite": true
+      }
+    },
+    "default": {
+      "all": {
+        "ADE_m": 6.25266251345132,
+        "FDE_m": 9.361778207698428,
+        "speed_MAE_mps": 0.8636229066208445,
+        "min_pair_distance_m": 0.12119649350643158,
+        "close_pair_frames_lt_0.4m": 1780,
+        "mean_speed_mps": 0.7363500595092773,
+        "mean_min_radius_m": 1.0676002502441406,
+        "arrival_fraction": 0.03125,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      },
+      "holdout": {
+        "ADE_m": 9.041958586255237,
+        "FDE_m": 9.361778207698428,
+        "speed_MAE_mps": 0.8574050057415786,
+        "min_pair_distance_m": 0.12119649350643158,
+        "close_pair_frames_lt_0.4m": 1297,
+        "mean_speed_mps": 0.4273107945919037,
+        "mean_min_radius_m": 1.0676002502441406,
+        "arrival_fraction": 0.03125,
+        "max_speed_mps": 2.0820250511169434,
+        "finite": true
+      }
+    },
+    "selected": {
+      "all": {
+        "ADE_m": 2.542220717431787,
+        "FDE_m": 0.29862536774292453,
+        "speed_MAE_mps": 0.8172236011890277,
+        "min_pair_distance_m": 0.005756358150392771,
+        "close_pair_frames_lt_0.4m": 2375,
+        "mean_speed_mps": 1.3169912099838257,
+        "mean_min_radius_m": 0.9947487711906433,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 3.132678747177124,
+        "finite": true
+      },
+      "holdout": {
+        "ADE_m": 2.4418466347283325,
+        "FDE_m": 0.29862536774292453,
+        "speed_MAE_mps": 0.8251595009910812,
+        "min_pair_distance_m": 0.014279613271355629,
+        "close_pair_frames_lt_0.4m": 560,
+        "mean_speed_mps": 1.208829402923584,
+        "mean_min_radius_m": 0.9947487711906433,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 3.132678747177124,
+        "finite": true
+      }
+    },
+    "no_interaction": {
+      "all": {
+        "ADE_m": 2.72123023364432,
+        "FDE_m": 0.31471492870196127,
+        "speed_MAE_mps": 0.8306045274142693,
+        "min_pair_distance_m": 0.001446578768081963,
+        "close_pair_frames_lt_0.4m": 12263,
+        "mean_speed_mps": 1.1938729286193848,
+        "mean_min_radius_m": 0.0696125328540802,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 2.6000020503997803,
+        "finite": true
+      },
+      "holdout": {
+        "ADE_m": 2.1382746240994974,
+        "FDE_m": 0.31471492870196127,
+        "speed_MAE_mps": 0.8103499295719788,
+        "min_pair_distance_m": 0.7943421006202698,
+        "close_pair_frames_lt_0.4m": 0,
+        "mean_speed_mps": 0.014531529508531094,
+        "mean_min_radius_m": 0.0696125328540802,
+        "arrival_fraction": 1.0,
+        "max_speed_mps": 2.6000020503997803,
+        "finite": true
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "case": "initial_noise_2cm_seed_1",
+      "ADE_m": 2.6925116753886464,
+      "FDE_m": 0.2955306184190212,
+      "speed_MAE_mps": 0.8673909282387183,
+      "min_pair_distance_m": 0.004614877514541149,
+      "close_pair_frames_lt_0.4m": 674,
+      "mean_speed_mps": 1.2046592235565186,
+      "mean_min_radius_m": 0.919036328792572,
+      "arrival_fraction": 1.0,
+      "max_speed_mps": 3.149163246154785,
+      "finite": true
+    },
+    {
+      "case": "initial_noise_2cm_seed_2",
+      "ADE_m": 2.644642304502391,
+      "FDE_m": 0.30323959081925866,
+      "speed_MAE_mps": 0.860806307198028,
+      "min_pair_distance_m": 0.003892752109095454,
+      "close_pair_frames_lt_0.4m": 691,
+      "mean_speed_mps": 1.1635597944259644,
+      "mean_min_radius_m": 0.8224517107009888,
+      "arrival_fraction": 1.0,
+      "max_speed_mps": 3.1648948192596436,
+      "finite": true
+    },
+    {
+      "case": "initial_noise_2cm_seed_3",
+      "ADE_m": 2.6560565333210633,
+      "FDE_m": 0.31052360748534347,
+      "speed_MAE_mps": 0.8959762954712798,
+      "min_pair_distance_m": 0.04523110389709473,
+      "close_pair_frames_lt_0.4m": 431,
+      "mean_speed_mps": 1.2016195058822632,
+      "mean_min_radius_m": 0.919532835483551,
+      "arrival_fraction": 1.0,
+      "max_speed_mps": 3.345369815826416,
+      "finite": true
+    },
+    {
+      "case": "integration_8_substeps",
+      "ADE_m": 2.371412708467818,
+      "FDE_m": 0.3111477198972402,
+      "speed_MAE_mps": 0.8101397818509023,
+      "min_pair_distance_m": 0.021287327632308006,
+      "close_pair_frames_lt_0.4m": 582,
+      "mean_speed_mps": 1.1798473596572876,
+      "mean_min_radius_m": 0.9343339800834656,
+      "arrival_fraction": 1.0,
+      "max_speed_mps": 3.2443795204162598,
+      "finite": true
+    },
+    {
+      "case": "assumed_fps_20",
+      "ADE_m": 1.9907045428985404,
+      "FDE_m": 0.30601548471620416,
+      "speed_MAE_mps": 0.7140355418294368,
+      "min_pair_distance_m": 0.014938847161829472,
+      "close_pair_frames_lt_0.4m": 107,
+      "mean_speed_mps": 0.5724353194236755,
+      "mean_min_radius_m": 1.010092854499817,
+      "arrival_fraction": 1.0,
+      "max_speed_mps": 3.2918970584869385,
+      "finite": true
+    },
+    {
+      "case": "assumed_fps_30",
+      "ADE_m": 4.322000573868998,
+      "FDE_m": 0.6128157950834527,
+      "speed_MAE_mps": 1.177985000700704,
+      "min_pair_distance_m": 0.010233317501842976,
+      "close_pair_frames_lt_0.4m": 1308,
+      "mean_speed_mps": 1.6090575456619263,
+      "mean_min_radius_m": 0.9463250637054443,
+      "arrival_fraction": 0.78125,
+      "max_speed_mps": 3.186232328414917,
+      "finite": true
+    }
+  ],
+  "behavior": {
+    "eligible_persons": 63,
+    "mean_acc_difference": -0.17818593695719512,
+    "fraction_negative_acc_difference": 0.6666666666666666,
+    "mean_abs_turn_difference": 0.05786451628787309,
+    "fraction_positive_turn_difference": 0.5238095238095238
+  },
+  "event": {
+    "frame": 246,
+    "time_s": 7.96,
+    "ids": [
+      51,
+      52
+    ],
+    "separation_m": 1.4089141543770507,
+    "predicted_ttc_s": 0.6757773609045951,
+    "predicted_miss_m": 0.05310381774315736,
+    "observed_acc_mps2": -2.8834768434346514,
+    "observed_turn_radps": -1.9759376536746087
+  },
+  "worst_person": {
+    "id": 9,
+    "ADE_m": 5.846326160504294
+  }
+}

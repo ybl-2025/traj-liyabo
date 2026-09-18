@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+model/vendor/socialforce/.git/
+results/frame_comparison.csv
+.DS_Store
+Thumbs.db
