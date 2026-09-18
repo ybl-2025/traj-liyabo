@@ -140,7 +140,7 @@ python model/write_readme.py
 本次环境：Python 3.12.4，NumPy 1.26.4，SciPy 1.13.1，Matplotlib 3.8.4，PyTorch 2.7.0+cu118。随机扰动种子固定为 1/2/3，主实验无随机噪声；所有运算使用 CPU。没有要求额外下载轨迹数据。
 
 ```text
-week2--/
+week02/
   README.md                 本报告
   circle-10m-64-1.txt        复现所需原始数据
   .gitignore                排除缓存、日志与冗余导出
