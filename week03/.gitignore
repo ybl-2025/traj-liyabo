@@ -29,6 +29,14 @@ evaluator/nll.py
 !assets/
 !assets/four_models_test_comparison.png
 
+# Explicitly included for the complete week03 submission
+!DATA_BLOCK/
+!DATA_BLOCK/**
+!OUTPUT_BLOCK/
+!OUTPUT_BLOCK/**
+!classroom/raw/
+!classroom/raw/**
+
 # Python
 venv*/
 *.pyc

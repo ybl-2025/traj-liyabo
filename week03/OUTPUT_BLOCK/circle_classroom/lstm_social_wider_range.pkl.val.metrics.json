@@ -1,0 +1,18 @@
+{
+  "split": "val",
+  "scenes": 12,
+  "primary_only": true,
+  "model": {
+    "ADE": 0.5235769748687744,
+    "FDE": 1.007639765739441
+  },
+  "constant_velocity": {
+    "ADE": 0.23733101785182953,
+    "FDE": 0.4491218328475952
+  },
+  "parameter_count": 25777,
+  "trainable_parameter_count": 25777,
+  "elapsed_seconds": 0.5873134,
+  "units": "scaled coordinate units; metres only under unverified cm assumption",
+  "protocol": "all 64 neighbours, no ground-truth future passed to model; one mean rollout"
+}
