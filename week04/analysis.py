@@ -19,7 +19,7 @@ DATA_CANDIDATES = (
     ROOT.parent / "第4周_NGSIM-I80_课堂数据" / DATA_FILENAME,
 )
 DATA_PATH = next((path for path in DATA_CANDIDATES if path.exists()), DATA_CANDIDATES[0])
-RESULT_DIR = ROOT / "结果"
+RESULT_DIR = ROOT / "results"
 
 LANE_ID = 4
 Y_MIN = 300.0
@@ -457,7 +457,7 @@ def plot_one_page(all_results: pd.DataFrame, quality: dict) -> None:
         bbox=dict(boxstyle="round,pad=0.5", facecolor="#F8F5F0", edgecolor="#E4D9CB"),
     )
 
-    fig.savefig(RESULT_DIR / "一页结果图.png", dpi=230, facecolor="white")
+    fig.savefig(RESULT_DIR / "summary.png", dpi=230, facecolor="white")
     plt.close(fig)
 
 
@@ -583,7 +583,7 @@ def plot_visual_comparison(all_results: pd.DataFrame) -> None:
         color=COLORS["muted"],
     )
     fig.subplots_adjust(left=0.065, right=0.89, top=0.91, bottom=0.07, hspace=0.26, wspace=0.18)
-    fig.savefig(RESULT_DIR / "图形表达对比.png", dpi=220, facecolor="white")
+    fig.savefig(RESULT_DIR / "visualization_comparison.png", dpi=220, facecolor="white")
     plt.close(fig)
 
 
@@ -696,7 +696,7 @@ def write_summary(
         "60秒窗口对短时扰动进行平均，点云范围收缩，整体趋势更稳定。",
         "Edie法与空间采样法几乎重合；虚拟检测器在10秒窗口受整数车辆计数影响，60秒后明显接近。",
     ]
-    (RESULT_DIR / "分析摘要.txt").write_text("\n".join(lines), encoding="utf-8")
+    (RESULT_DIR / "analysis_summary.txt").write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> None:
@@ -713,7 +713,7 @@ def main() -> None:
 
     results = [edie[10], edie[60], snapshot[10], snapshot[60], detector[10], detector[60]]
     export = prepare_export_table(results)
-    export.to_csv(RESULT_DIR / "窗口计算结果.csv", index=False, encoding="utf-8-sig", float_format="%.6f")
+    export.to_csv(RESULT_DIR / "window_results.csv", index=False, encoding="utf-8-sig", float_format="%.6f")
 
     write_summary(quality, edie, snapshot, detector)
     plot_one_page(export, quality)

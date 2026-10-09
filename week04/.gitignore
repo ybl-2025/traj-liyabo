@@ -3,8 +3,8 @@ data/*
 !data/.gitkeep
 
 # Only the current PNG figures are intended for the repository.
-结果/*.pdf
-结果/计算方法对比.png
+results/*.pdf
+results/计算方法对比.png
 
 # Python-generated files and local environments.
 __pycache__/

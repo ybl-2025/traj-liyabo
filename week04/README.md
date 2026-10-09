@@ -2,7 +2,7 @@
 
 本项目使用 NGSIM I-80 车辆轨迹，固定东向4号车道与100 m路段，分别用10秒和60秒非重叠窗口计算流量、密度和速度。实验并行采用三种计算口径，比较它们在短窗口和长窗口下的结果差异，再用三种图形表达检查点云结构、速度状态与时间演化。
 
-![三种方法与两种窗口的结果](结果/一页结果图.png)
+![三种方法与两种窗口的结果](results/summary.png)
 
 ## 1. 分析范围
 
@@ -115,7 +115,7 @@ Edie法与空间采样法的误差很小，说明位置轨迹和速度字段给�
 
 ### 5.1 一页结果图
 
-`结果/一页结果图.png` 使用3行×2列的小多图：
+`results/summary.png` 使用3行×2列的小多图：
 
 - 行：Edie轨迹裁剪、0.1秒空间采样、350 m虚拟检测器；
 - 列：10秒窗口、60秒窗口；
@@ -126,9 +126,9 @@ Edie法与空间采样法的误差很小，说明位置轨迹和速度字段给�
 
 ### 5.2 图形表达对比
 
-![三种方法下的图形表达](结果/图形表达对比.png)
+![三种方法下的图形表达](results/visualization_comparison.png)
 
-`结果/图形表达对比.png` 使用3行×3列：每一行对应一种计算方法，每一列对应一种表达方式。
+`results/visualization_comparison.png` 使用3行×3列：每一行对应一种计算方法，每一列对应一种表达方式。
 
 - A 原始散点：叠加10秒实心点和60秒空心点，直接比较聚合尺度。
 - B 速度着色：用10秒窗口，颜色表示 `v=q/k`，用于识别高速低密度和低速高密度状态。
@@ -155,13 +155,17 @@ python -m pip install -r requirements.txt
 原始数据不提交到GitHub。将 `NGSIM_I80_20050413_1600-1615_SI.csv` 放入项目的 `data/` 目录：
 
 ```text
-交通流基本图分析/
+week04/
 ├─ analysis.py
 ├─ README.md
 ├─ requirements.txt
 ├─ data/
 │  └─ NGSIM_I80_20050413_1600-1615_SI.csv   # 不提交到GitHub
-└─ 结果/
+└─ results/
+   ├─ summary.png
+   ├─ visualization_comparison.png
+   ├─ window_results.csv
+   └─ analysis_summary.txt
 ```
 
 运行：
@@ -174,10 +178,10 @@ python analysis.py
 
 主要输出：
 
-- `结果/一页结果图.png`
-- `结果/图形表达对比.png`
-- `结果/窗口计算结果.csv`
-- `结果/分析摘要.txt`
+- `results/summary.png`
+- `results/visualization_comparison.png`
+- `results/window_results.csv`
+- `results/analysis_summary.txt`
 
 ## 8. 数据来源
 
