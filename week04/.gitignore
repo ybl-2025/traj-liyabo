@@ -1,0 +1,19 @@
+# Raw trajectory data is intentionally excluded from GitHub.
+data/*
+!data/.gitkeep
+
+# Only the current PNG figures are intended for the repository.
+结果/*.pdf
+结果/计算方法对比.png
+
+# Python-generated files and local environments.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and operating-system files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
