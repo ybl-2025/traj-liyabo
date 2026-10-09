@@ -6,6 +6,7 @@ import math
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.collections import LineCollection
 from matplotlib.colors import Normalize
 
 
@@ -587,6 +588,91 @@ def plot_visual_comparison(all_results: pd.DataFrame) -> None:
     plt.close(fig)
 
 
+def plot_spacetime_trajectories(clipped: pd.DataFrame) -> None:
+    """Show vehicle paths through the study segment, colored by observed speed."""
+    if clipped.empty:
+        raise ValueError("选定车道与路段内没有可绘制的轨迹片段。")
+
+    duration = clipped["dt"].to_numpy()
+    start_fraction = np.clip(
+        (clipped["clip_t0"].to_numpy() - clipped["t0"].to_numpy()) / duration,
+        0.0,
+        1.0,
+    )
+    end_fraction = np.clip(
+        (clipped["clip_t1"].to_numpy() - clipped["t0"].to_numpy()) / duration,
+        0.0,
+        1.0,
+    )
+    y_start = clipped["y0"].to_numpy() + start_fraction * clipped["dy"].to_numpy()
+    y_end = clipped["y0"].to_numpy() + end_fraction * clipped["dy"].to_numpy()
+    t_start = clipped["clip_t0"].to_numpy() / 60.0
+    t_end = clipped["clip_t1"].to_numpy() / 60.0
+    speed_km_h = (clipped["v0"].to_numpy() + clipped["v1"].to_numpy()) * 1.8
+
+    # Draw the trajectory as short contiguous segments. The underlying 0.1 s
+    # observations are retained; only the figure is rasterized at export time.
+    line_segments = np.stack(
+        [
+            np.column_stack([y_start - Y_MIN, t_start]),
+            np.column_stack([y_end - Y_MIN, t_end]),
+        ],
+        axis=1,
+    )
+    valid = np.isfinite(line_segments).all(axis=(1, 2)) & np.isfinite(speed_km_h)
+    line_segments = line_segments[valid]
+    speed_km_h = speed_km_h[valid]
+    lower, upper = np.nanpercentile(speed_km_h, [2, 98])
+    if upper <= lower:
+        upper = lower + 1.0
+    norm = Normalize(vmin=float(lower), vmax=float(upper), clip=True)
+
+    fig, ax = plt.subplots(figsize=(12.5, 8.2))
+    collection = LineCollection(
+        line_segments,
+        cmap="viridis",
+        norm=norm,
+        linewidths=1.0,
+        alpha=0.72,
+        rasterized=True,
+        zorder=2,
+    )
+    collection.set_array(speed_km_h)
+    ax.add_collection(collection)
+    ax.set_xlim(0, LENGTH_M)
+    ax.set_ylim(TIME_START / 60.0, TIME_END / 60.0)
+    ax.set_xticks(np.arange(0, LENGTH_M + 1, 20))
+    time_ticks = np.arange(0, TIME_END / 60.0 + 0.1, 1)
+    ax.set_yticks(time_ticks)
+    ax.set_yticklabels([f"16:{int(tick):02d}" for tick in time_ticks])
+    ax.set_xlabel("距分析路段起点的距离（m）")
+    ax.set_ylabel("时间（时:分）")
+    fig.suptitle(
+        "I-80东向4号车道时空轨迹（16:00–16:15）",
+        fontsize=16,
+        fontweight="bold",
+        color=COLORS["dark"],
+        y=0.97,
+    )
+    fig.text(
+        0.5,
+        0.925,
+        "每条彩色线段表示车辆在100 m分析路段内的行驶；颜色表示轨迹记录速度",
+        ha="center",
+        va="center",
+        fontsize=10,
+        color=COLORS["muted"],
+    )
+    ax.grid(True, zorder=0)
+    ax.spines[["top", "right"]].set_visible(False)
+    colorbar = fig.colorbar(collection, ax=ax, pad=0.025, fraction=0.045)
+    colorbar.set_label("车辆速度（km/h）")
+    colorbar.ax.tick_params(labelsize=9)
+    fig.subplots_adjust(left=0.09, right=0.91, top=0.89, bottom=0.09)
+    fig.savefig(RESULT_DIR / "spacetime_trajectories.png", dpi=220, facecolor="white")
+    plt.close(fig)
+
+
 def prepare_export_table(results: list[pd.DataFrame]) -> pd.DataFrame:
     keep = [
         "method",
@@ -718,6 +804,7 @@ def main() -> None:
     write_summary(quality, edie, snapshot, detector)
     plot_one_page(export, quality)
     plot_visual_comparison(export)
+    plot_spacetime_trajectories(clipped)
 
     print(f"完成。结果目录：{RESULT_DIR}")
     for path in sorted(RESULT_DIR.iterdir()):

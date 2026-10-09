@@ -136,6 +136,12 @@ Edie法与空间采样法的误差很小，说明位置轨迹和速度字段给�
 
 三列只改变图形表达，不改变计算结果。原始散点最适合保留证据，速度着色最适合解释交通状态，时间演化图适合查找拥堵形成、消散和可能的滞回路径。
 
+### 5.3 时空轨迹图
+
+![车辆在100米分析路段内的时空轨迹](results/spacetime_trajectories.png)
+
+`results/spacetime_trajectories.png` 从原始车辆轨迹出发：横轴是车辆在100 m分析路段内的位置，纵轴是时间，每条彩色短线表示车辆的一段行程，颜色表示该段的记录速度。它补充展示车辆何时进入和离开分析路段，以及低速状态是否在时间和空间上聚集；它不替代前面的流量—密度统计图。该图使用与计算相同的轨迹裁剪范围和原始采样记录，没有改变窗口计算结果。
+
 ## 6. 结果解释
 
 1. 研究时段主要处于中高密度状态，局部窗口出现低速高密度和流量下降。
@@ -164,6 +170,7 @@ week04/
 └─ results/
    ├─ summary.png
    ├─ visualization_comparison.png
+   ├─ spacetime_trajectories.png
    ├─ window_results.csv
    └─ analysis_summary.txt
 ```
@@ -180,6 +187,7 @@ python analysis.py
 
 - `results/summary.png`
 - `results/visualization_comparison.png`
+- `results/spacetime_trajectories.png`
 - `results/window_results.csv`
 - `results/analysis_summary.txt`
 
