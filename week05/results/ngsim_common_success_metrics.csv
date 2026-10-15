@@ -1,0 +1,13 @@
+split,parameter_set,model,episodes,position_rmse_m,speed_rmse_m_s
+test,calibrated,FVDM,13,2.77874800,0.67000639
+test,calibrated,IDM,13,4.40957105,0.69370819
+test,calibrated,OVM,13,5.27525949,0.87425769
+test,default,FVDM,13,7.37181102,0.97381442
+test,default,IDM,13,4.90723540,0.73463643
+test,default,OVM,13,7.59687359,1.29428346
+train,calibrated,FVDM,21,2.89103799,0.62826481
+train,calibrated,IDM,21,3.50079069,0.61862555
+train,calibrated,OVM,21,4.61984698,0.72928578
+train,default,FVDM,21,7.07182577,0.89637944
+train,default,IDM,21,4.28627579,0.66028574
+train,default,OVM,21,7.31714243,1.14912607

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/*.csv
+data/*.zip
+data/*.parquet
+results/_cache/
+archive/
+# The published gzip source is intentionally tracked for offline reproduction.
+!data/NGSIM_I80_20050413_1600-1615_SI.csv.gz

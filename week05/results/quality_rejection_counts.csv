@@ -1,0 +1,12 @@
+reason,windows
+following_relevance,113
+gap_range,450
+lateral_stability,967
+nonnegative_speed,3
+position_correction,67
+processed_acceleration,1
+processed_jerk,7
+raw_acceleration,3449
+raw_kinematics,2490
+speed_correction,9
+vehicle_length,72

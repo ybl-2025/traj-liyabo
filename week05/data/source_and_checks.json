@@ -1,0 +1,65 @@
+{
+  "source_page": "https://data.transportation.gov/d/8ect-6jqj",
+  "source_api": "https://data.transportation.gov/resource/8ect-6jqj.csv",
+  "download_date": "2026-10-08",
+  "location": "I-80, Emeryville, California",
+  "local_time_interval": "2005-04-13 16:00:00 <= t < 16:15:00, PDT (UTC-7)",
+  "global_time_ms": [
+    1000000000,
+    1113434099900
+  ],
+  "columns_selected": [
+    "vehicle_id",
+    "frame_id",
+    "global_time",
+    "local_x",
+    "local_y",
+    "v_length",
+    "v_class",
+    "v_vel",
+    "v_acc",
+    "lane_id"
+  ],
+  "rows": 1226650,
+  "vehicles": 2052,
+  "lane_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "duplicate_vehicle_frame_keys": 0,
+  "off_100ms_grid_rows": 0,
+  "si_conversion": "US survey foot = 1200/3937 m; time_s relative to interval start; numeric SI fields rounded to 6 decimal places",
+  "processing": "Selected location, time interval, and 10 fields; no vehicle/lane selection, no smoothing or missing-data filling",
+  "queries": [
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433200000+AND+global_time+%3C+1113433260000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433260000+AND+global_time+%3C+1113433320000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433320000+AND+global_time+%3C+1113433380000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433380000+AND+global_time+%3C+1113433440000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433440000+AND+global_time+%3C+1113433500000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433500000+AND+global_time+%3C+1113433560000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433560000+AND+global_time+%3C+1113433620000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433620000+AND+global_time+%3C+1113433680000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433680000+AND+global_time+%3C+1113433740000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433740000+AND+global_time+%3C+1113433800000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433800000+AND+global_time+%3C+1113433860000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433860000+AND+global_time+%3C+1113433920000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433920000+AND+global_time+%3C+1113433980000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113433980000+AND+global_time+%3C+1113434040000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id",
+    "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y%2Cv_length%2Cv_class%2Cv_vel%2Cv_acc%2Clane_id&%24where=location%3D%27i-80%27+AND+global_time+%3E%3D+1113434040000+AND+global_time+%3C+1113434100000&%24limit=200000&%24order=global_time%2Cvehicle_id%2Cframe_id"
+  ],
+  "files": {
+    "NGSIM_I80_20050413_1600-1615_raw.csv": {
+      "bytes": 72328659,
+      "sha256": "a76d57f91fe5f44f7fe7170353039f39e2839f31138b84e1a04af4d4e63d8ed0"
+    },
+    "NGSIM_I80_20050413_1600-1615_SI.csv": {
+      "bytes": 99340985,
+      "sha256": "df86a98e490daba1bf6a2ff3a1ca2e346be1cf2bdaf66a037910b74f40695255"
+    }
+  }
+}

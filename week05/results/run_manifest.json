@@ -1,0 +1,7 @@
+{
+  "python": "3.12.4",
+  "mode": "fixed_21_train_13_test",
+  "selection_version": "quality-v2",
+  "source_sha256": "df86a98e490daba1bf6a2ff3a1ca2e346be1cf2bdaf66a037910b74f40695255",
+  "randomness": "none"
+}

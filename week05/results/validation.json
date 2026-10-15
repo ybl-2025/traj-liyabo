@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks_count": 22,
+  "checks": {
+    "21_train_13_test": true,
+    "34_distinct_followers": true,
+    "301_points_per_episode": true,
+    "30_second_duration": true,
+    "continuous_sampling": true,
+    "5_second_guards": true,
+    "vehicle_disjoint_splits": true,
+    "time_separation_including_guards": true,
+    "raw_acceleration_quality": true,
+    "raw_kinematics_quality": true,
+    "position_adjustment_bounded": true,
+    "nonnegative_reference_speed": true,
+    "positive_reference_gap": true,
+    "net_gap_geometry": true,
+    "204_rollouts_all_present": true,
+    "all_initial_states_match": true,
+    "prediction_gap_geometry": true,
+    "independent_rmse_and_failure_accounting": true,
+    "original_position_rmse_recalculated": true,
+    "213_step_size_checks": true,
+    "five_png_artifacts": true,
+    "training_count_in_calibration_record": true
+  }
+}

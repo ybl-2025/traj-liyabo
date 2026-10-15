@@ -1,0 +1,213 @@
+{
+  "calibrated": {
+    "OVM": {
+      "v0": 15.000000000000002,
+      "kappa": 1.9999999999999998,
+      "h": 5.000009448546332,
+      "ell": 19.771537112294368
+    },
+    "FVDM": {
+      "v0": 15.000000000993932,
+      "kappa": 0.10000000001258964,
+      "h": 5.000000988530964,
+      "ell": 20.58321351690288,
+      "lam": 0.926612331663141
+    },
+    "IDM": {
+      "v0": 15.000011764954516,
+      "a": 0.7144433571113887,
+      "b": 0.5000000000000001,
+      "T": 1.375939895264486,
+      "s0": 0.865971634929648,
+      "delta": 4.0
+    }
+  },
+  "defaults": {
+    "OVM": {
+      "v0": 30.0,
+      "kappa": 0.6,
+      "h": 25.0,
+      "ell": 10.0
+    },
+    "FVDM": {
+      "v0": 30.0,
+      "kappa": 0.6,
+      "h": 25.0,
+      "ell": 10.0,
+      "lam": 0.6
+    },
+    "IDM": {
+      "v0": 30.0,
+      "a": 1.2,
+      "b": 2.0,
+      "T": 1.5,
+      "s0": 2.0,
+      "delta": 4.0
+    }
+  },
+  "bounds": {
+    "OVM": {
+      "v0": [
+        15,
+        40
+      ],
+      "kappa": [
+        0.1,
+        2
+      ],
+      "h": [
+        5,
+        50
+      ],
+      "ell": [
+        2,
+        30
+      ]
+    },
+    "FVDM": {
+      "v0": [
+        15,
+        40
+      ],
+      "kappa": [
+        0.1,
+        2
+      ],
+      "h": [
+        5,
+        50
+      ],
+      "ell": [
+        2,
+        30
+      ],
+      "lam": [
+        0,
+        2
+      ]
+    },
+    "IDM": {
+      "v0": [
+        15,
+        40
+      ],
+      "a": [
+        0.2,
+        3
+      ],
+      "b": [
+        0.5,
+        5
+      ],
+      "T": [
+        0.3,
+        3
+      ],
+      "s0": [
+        0.5,
+        5
+      ]
+    }
+  },
+  "starts": [
+    {
+      "model": "OVM",
+      "start": 0,
+      "objective": 0.2035287761540296,
+      "nfev": 20,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "converged": true,
+      "parameters": {
+        "v0": 15.000000000000002,
+        "kappa": 1.9999999999999998,
+        "h": 5.000009448546332,
+        "ell": 19.771537112294368
+      }
+    },
+    {
+      "model": "OVM",
+      "start": 1,
+      "objective": 0.20352878547587375,
+      "nfev": 17,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "converged": true,
+      "parameters": {
+        "v0": 15.000000000138362,
+        "kappa": 1.9999999999986986,
+        "h": 5.000425993091266,
+        "ell": 19.77125482100272
+      }
+    },
+    {
+      "model": "FVDM",
+      "start": 0,
+      "objective": 0.10054319166484904,
+      "nfev": 14,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "converged": true,
+      "parameters": {
+        "v0": 15.000000000993932,
+        "kappa": 0.10000000001258964,
+        "h": 5.000000988530964,
+        "ell": 20.58321351690288,
+        "lam": 0.926612331663141
+      }
+    },
+    {
+      "model": "FVDM",
+      "start": 1,
+      "objective": 0.10054319179214338,
+      "nfev": 13,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "converged": true,
+      "parameters": {
+        "v0": 15.000000000852662,
+        "kappa": 0.1000000000002987,
+        "h": 5.000000935059356,
+        "ell": 20.583382556418087,
+        "lam": 0.9266437660996113
+      }
+    },
+    {
+      "model": "IDM",
+      "start": 0,
+      "objective": 0.12706506473492796,
+      "nfev": 11,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "converged": true,
+      "parameters": {
+        "v0": 15.000011764954516,
+        "a": 0.7144433571113887,
+        "b": 0.5000000000000001,
+        "T": 1.375939895264486,
+        "s0": 0.865971634929648,
+        "delta": 4.0
+      }
+    },
+    {
+      "model": "IDM",
+      "start": 1,
+      "objective": 0.12706506557753286,
+      "nfev": 9,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "converged": true,
+      "parameters": {
+        "v0": 15.000011680517167,
+        "a": 0.7145001304295528,
+        "b": 0.5000000000006637,
+        "T": 1.3758558572605533,
+        "s0": 0.8668563727294989,
+        "delta": 4.0
+      }
+    }
+  ],
+  "loss": "mean of concatenated (position_error/10m)^2 and (speed_error/2mps)^2; all 21 train episodes; exclude initial point",
+  "dt_s": 0.05,
+  "model_selection": "lowest training objective from two fixed starts; no test selection"
+}

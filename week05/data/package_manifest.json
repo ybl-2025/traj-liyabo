@@ -1,0 +1,11 @@
+{
+  "filename": "NGSIM_I80_20050413_1600-1615_SI.csv.gz",
+  "compression": "gzip",
+  "bytes": 26243991,
+  "sha256": "e9bc6d7769887ce0dc2d751868062c59dbcfd117a756f2cb145261422dc3cc14",
+  "uncompressed_filename": "NGSIM_I80_20050413_1600-1615_SI.csv",
+  "uncompressed_bytes": 99340985,
+  "uncompressed_sha256": "df86a98e490daba1bf6a2ff3a1ca2e346be1cf2bdaf66a037910b74f40695255",
+  "source": "https://data.transportation.gov/d/8ect-6jqj",
+  "description": "Original public classroom SI data, included for full offline reproduction; gzip mtime=0"
+}
