@@ -1,0 +1,63 @@
+{
+  "version": 3,
+  "models": [
+    "GOAL",
+    "DIST",
+    "PRED",
+    "SIDE"
+  ],
+  "shared_interaction": {
+    "A": 5.0,
+    "B": 0.45,
+    "horizon": 2.0,
+    "side_strength": 3.5,
+    "wall_A": 12.0,
+    "wall_B": 0.15,
+    "arrival_radius": 0.25
+  },
+  "dt_s": 0.02,
+  "sample_s": 0.1,
+  "duration_s": 40,
+  "scenes": {
+    "narrow": {
+      "pedestrians": 4,
+      "cars": 1,
+      "widths_m": [
+        3.5,
+        3.0,
+        2.8,
+        2.4
+      ],
+      "road_length_m": 40
+    },
+    "circle": {
+      "pairs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "radius_m": 10.0,
+      "boundary": "none; circle is initial layout only",
+      "layout": "2N uniform starts; N cars on right semicircle, paired pedestrians at antipodes"
+    }
+  },
+  "pedestrian": {
+    "speed_m_s": 1.5,
+    "tau_s": 0.5,
+    "max_acc_m_s2": 3,
+    "radius_m": 0.25
+  },
+  "car": {
+    "speed_m_s": 3,
+    "tau_s": 0.8,
+    "max_acc_m_s2": 4,
+    "length_m": 4.4,
+    "width_m": 1.8,
+    "mobility": "fixed initial diameter heading; no reverse"
+  },
+  "parameter_policy": "Same final parameters as first version, no refitting for revised participant counts.",
+  "continuation": "After overlap continue only as diagnostic. Later arrival is never safe success."
+}
